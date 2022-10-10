@@ -1,0 +1,13 @@
+import { ApolloClient, InMemoryCache } from "@apollo/client";
+
+export const client = new ApolloClient({
+     uri: 'https://api-sa-east-1.graphcms.com/v2/cl4rs6cju1jy901ywhsdm0t1y/master?query=query%20lessons%7B%0A%20%20lesson%0A%7D%0A&operationName=lessons',
+     headers:{
+        'Autorization':'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2NTgzNzE3OTgsImF1ZCI6WyJodHRwczovL2FwaS1zYS1lYXN0LTEuaHlncmFwaC5jb20vdjIvY2w0cnM2Y2p1MWp5OTAxeXdoc2RtMHQxeS9tYXN0ZXIiLCJtYW5hZ2VtZW50LW5leHQuZ3JhcGhjbXMuY29tIl0sImlzcyI6Imh0dHBzOi8vbWFuYWdlbWVudC5ncmFwaGNtcy5jb20vIiwic3ViIjoiYjkyOWIxODktOWEzOC00ODE3LTllNDAtZTYwNzBmYjRlNTExIiwianRpIjoiY2w1dWZyMWliM2E1cTAxdXE5NGUwaDlrNCJ9.0xavG3eydK7OeNs_IH_pbRUSsxpPyjyFFQjWWnHhJEqyMwjNTBtyKFPfJeQe3T0ay2eKPL-jcC9Suk49jEnhG82sh_ASAeZUqxKgMkjASct7i_1WuoLkPPVFZIMYpakep_SeQNAIx9YddGNFrlKcBspZ3dA7AX-gziKhzpRMKPWpjevKtuPRX3LsyEQL6vDBeEbw-e-2sGTl6MBhT4rOx2rueBfC3IoRTkGlNJd34Hg5hEpTKFYMDRp6WttJ-H8FjEQDpZQ1JXg4wLpFE-Jo93p3oZHIY5uQ72GxX9sHgzafOE2MUcOQHcW-4RyJXeU8NhU4G7wPWN3PaFFLA0AdIEy7wuORs8ECxYIcECShdNJFkTCtGp_aEfSmneLZqf6cOGi1qAOnpsNyR9BXOBXwyC-mQhLUrkzZvOJxDLvygKPQzl07UeiWboYtOj511L2tmCPU9jIGJ3jFNZjSulktTcsTmErHjjqch0FMVSnYLAcVBPb62aUmH6r2EJPm5IbetpyN_PzTvyX1L77iTaI77tkC98o-c4pVrxU4KTZSgKI_PIRyNBtrpn8L_01aD82ilUhsef1V_OKPVWibKfUeQwtyHeftBBgVvwlgeoAUKyfhbUhkvqszVRIa2L8EQ6O9KFekjLpMEnZnAq0AqqZ8hl0xxmvu-Ya3Y1QX-q7tnlg'
+     },   
+     cache: new InMemoryCache()
+
+})
+
+
+// Requisição da api com o Cache em memoria
